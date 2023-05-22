@@ -3,14 +3,14 @@ from pymongo import MongoClient
 from pyrogram import Client, filters
 
 # Set up MongoDB connection
-mongo_client = MongoClient('mongodb://localhost:27017/')
+mongo_client = MongoClient('mongodb+srv://abc:abcd@cluster0.0g1g1gt.mongodb.net/?retryWrites=true&w=majority')
 db = mongo_client['chatbot']
 collection = db['chats']
 
 # Set up Pyrogram client
-api_id = os.environ.get('API_ID')
-api_hash = os.environ.get('API_HASH')
-bot_token = os.environ.get('BOT_TOKEN')
+api_id = os.environ.get('28309985')
+api_hash = os.environ.get('ef360fdbf75ffbf0eddb6d37d1c464e0')
+bot_token = os.environ.get('1719065252:AAGW59VrBne8hT8L9NSMSzLqa_nfZfo4T-I')
 
 app = Client(':memory:', api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
